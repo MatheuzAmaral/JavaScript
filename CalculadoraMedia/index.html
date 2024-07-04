@@ -1,38 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalculadoraMedia</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div class="Card-Notas">
-        <h1> Calculadora de Média </h1> 
-        <p></p>  
-     <div class="nota-ava1"> 
-        <label for="number">AVA1:</label>
-        <input type="notas" name="Nota" placeholder="Digite a Nota AVA1">
-        </div>
-        <div class="notas-ava2"> 
-        <label for="number">AVA2:</label>
-        <input type="notas" name="Nota" placeholder="Digite a Nota AVA2">
-         </div>
-     <div class="notas-A2"> 
-        <label for="number">A2:</label>
-        <input type="notas" name="Nota" placeholder="Digite a Nota A2">
-     </div>
-     <div class="notas-A3"> 
-        <label for="number">A3:</label>
-        <input type="notas" name="Nota" placeholder="Digite a Nota A3">
-    </div>
-    <button class="Botao">Calcular</button>
-             <div class="Card-Media">
-                <h2 class="Média">Sua Média é:</h2>
-                <p> Desenvolvido por: Matheuz Amaral</p>
-                <p> BootSttrap - JavaScript, HTML5, CSS3</p>
-             </div>
-    
-    </body>
+<html>
+	<head>
+		<title>Simulador de Avaliação - UVA</title>
+		<!-- <meta charset="UTF-8"> -->
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=2, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="main" style="margin: 0px auto; margin-top: 10px; padding: 20px;">
+			<p align="center">
+				Simulador de Avaliação - UVA
+			</p>
+			<p>
+				<img src="/CalculadoraMedia/images/uvaLogo.png" width="100%">
+			</p>
+
+			Trabalho 1:
+			<input step="0.01" class="form-control" maxlength="3" type="number" max="100" min="0" name="trab1" id="trab1" placeholder="Ex: 100% = 10">
+
+			Trabalho 2:
+			<input step="0.01" class="form-control" type="number" max="100" min="0" name="trab2" id="trab2" placeholder="Ex: 82% = 8.2">
+
+			<br>
+			Avaliação A2:
+			<input step="0.01" class="form-control" type="number" max="100" min="0" name="av2" id="av2" placeholder="Ex: 8">
+
+			<br>
+			Avaliação A3:
+			<input step="0.01" class="form-control" type="number" max="100" min="0" name="av3" id="av3" placeholder="Ex: 9">
+
+			<br>
+
+			<div class="alert alert-secondary" role="alert" align="center">
+			  Sua média é: 
+				<p><span style="font-size: 46px;" id="resultado">...</span>
+			 	<br><span id="status"></span>
+				</p>
+			</div>
+
+			<p align="center">
+				<span id="dev">Desenvolvido por: <a href="https://github.com/MatheuzAmaral" target="_blank">Matheus Amaral</a></span><br>
+				<span id="lang"><a href="https://getbootstrap.com/" target="_blank">BootStrap v4</a> - JavaScript, HTML5, CSS3</span>
+			</p>
+
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="/CalculadoraMedia/JavaScript.js"></script>
 </html>
