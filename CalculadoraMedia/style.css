@@ -1,0 +1,27 @@
+body {
+    background-image: url(https://miro.medium.com/v2/resize:fit:1200/1*Ox1w7Ao2ZAT0Szn2Mzxfog.jpeg);
+    color: rgb(223, 223, 223);
+}
+
+h1 {
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 40%;
+    background-color: #333333; /* Cinza escuro */
+    border: 1px solid #555555; /* Cinza médio */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa preta */
+    border-radius: 8px;
+}
+.Card-Notas {
+    
+    text-align: center;
+    width: 80%; /* Largura do container */
+    margin: 20px auto; /* Centraliza o container e adiciona margem superior e inferior */
+    background-color:#333333ec;/* Cor de fundo do container */
+    padding: 20px; /* Espaçamento interno do container */
+    border: 1px solid #555555; /* Borda do container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.26); /* Sombra do container */
+    border-radius: 8px;
+}

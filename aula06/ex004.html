@@ -7,7 +7,8 @@
     <style>
         body {
             font: normal 20pt Arial;
-            color: aqua;
+            color: rgb(231, 231, 231);
+            background-color: black ;
         }
     </style>
 </head>
@@ -15,7 +16,10 @@
 
     <script>
         var nome = window.prompt('Qual seu nome? ')
-        document.write(`Seu nome tem ${nome.length} letras.`)
+        var n1 = Number(window.prompt('Digite um numero: '))
+        var n2 = Number(window.prompt('Digite um numero: '))
+        var s = n1 + n2
+        document.write(`${nome} a soma entre ${n1} e ${n2} é igual a ${s} entendeu?`);
     </script>
 </body>
 </html>
